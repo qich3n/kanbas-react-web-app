@@ -1,70 +1,86 @@
-<!-- @format -->
-
-<table width="100%" border="1">
-  <tr>
-    <td valign="top">
-      <ul>
-        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="#">Notifications</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">File</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">ePortfolios</a></li>
-        <li><a href="#">Shared Content</a></li>
-      </ul>
-    </td>
-    <td>
-      <p>Qi Chen's Profile</p>
-      <hr />
-      <form action="/Kanbas/Account/Profile/screen.html">
-        Name:
-        <input name="Qi Chen" type="text" value="Qi Chen" />
-        Pronouns:<select>
-          <option>he/his</option>
-          <option>she/her</option>
-          <option>they/they</option>
-        </select>
-        <br />
-        Title:<input /> <br />
-        <h2>Contact</h2>
-        <p>No registered services</p>
-        <h2>Biography</h2>
-        <textarea name="biography">
-      I followed the white rabbit down the hole.
-      </textarea
-        >
-        <h2>Links</h2>
-        <table>
-          <tr>
-            <th>Title</th>
-            <th></th>
-            <th>URL</th>
-            <th></th>
-          </tr>
-          <tr>
-            <th><input value="Youtube" /></th>
-            <th>-></th>
-            <th><input value="https://www.youtube.com" /></th>
-            <th><button>remove</button></th>
-          </tr>
-        </table>
-        <button>Add another link</button>
-        <br />
-        <button>Save</button>
-        <button>Cancel</button>
-      </form>
-    </td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Qi Chen's Profile</title>
+</head>
+<body>
+  <table width="100%">
+    <tr>
+      <td valign="top">
+        <ul>
+          <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+          <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+          <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Inbox</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Studio</a></li>
+          <li><a href="#">Commons</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </td>
+      <td valign="top">
+        <ul>
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">File</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">ePortfolios</a></li>
+          <li><a href="#">Shared Content</a></li>
+        </ul>
+      </td>
+      <td>
+        <h1>Qi Chen</h1>
+        <form action="/Kanbas/Account/Profile/screen.html">
+          Name:
+          <input name="name" type="text" value="Qi Chen" />
+          Pronouns:
+          <select name="pronouns">
+            <option>he/him</option>
+            <option>she/her</option>
+            <option>they/them</option>
+          </select><br />
+          Title:
+          <input name="title" type="text" /><br />
+          <h2>Contact</h2>
+          <p>No registered services</p>
+          <h2>Biography</h2>
+          <textarea name="biography">
+In faith which I believe
+          </textarea><br />
+          <h2>Links</h2>
+          <table>
+            <tr>
+              <th>Title</th>
+              <th></th>
+              <th>URL</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td><input name="linkTitle" value="Youtube" /></td>
+              <td>-></td>
+              <td><input name="linkURL" value="https://www.youtube.com" /></td>
+              <td><button type="button">remove</button></td>
+            </tr>
+          </table>
+          <button type="button">Add another link</button><br />
+          <a href="/Kanbas/Account/Profile/screen.html">
+            <button type="button">Save Profile</button>
+          </a>
+          <a href="/Kanbas/Account/Profile/screen.html">
+            <button type="button">Cancel</button>
+          </a>
+          <br/>
+          <a href="/Kanbas/Account/Profile/Edit/screen.html">
+            <button type="button">Edit Profile</button>
+          </a>
+          <a href="/Kanbas/Account/Profile/screen.html">
+            <button type="button">Cancel Editing</button>
+          </a>
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
