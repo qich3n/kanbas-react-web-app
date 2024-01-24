@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment Details</title>
+</head>
+<body>
+  <table width="100%">
+    <tbody>
+      <tr>
+        <td valign="top">
+          <select>
+            <option>SpeedGrader</option>
+          </select>
+          <hr />
+          <h2>Assignment Name</h2>
+          <input placeholder="A1-ENV+HTML" /><br />
+          <h2>Description</h2>
+          <input placeholder="This is assignment description" /><br />
+          <h3>Points</h3>
+          <input value="100" type="number" max="100" min="50" step="5" /><br />
+          <h3>Assignment Group</h3>
+          <select>
+            <option>ASSIGNMENTS</option>
+          </select><br />
+          <h3>Display Grade as</h3>
+          <select>
+            <option>Percentage</option>
+          </select><br />
+          <h3>Submission Types</h3>
+          <select>
+            <option>Online</option>
+          </select><br />
+          <h3>Online Entry Options</h3>
+          <input type="checkbox" id="textEntry" />
+          <label for="textEntry">Text Entry</label><br />
+          <input type="checkbox" /> Website URL <br />
+          <input type="checkbox" /> Media Recordings <br />
+          <input type="checkbox" /> Student Annotation <br />
+          <input type="checkbox" /> File Uploads <br />
+          <h3>Group Assignment</h3>
+          <input type="checkbox" id="GroupAssignment" />
+          <label for="GroupAssignment">This is a group assignment</label><br />
+          <h3>Peer Reviews</h3>
+          <input type="checkbox" id="GroupAssignment" />
+          <label for="GroupAssignment">Require Peer Review</label><br />      
+          <h3>Assign</h3>
+          <label>Assign To</label><br />
+          <select>
+            <option>Everyone</option>
+          </select><br />
+          <h3>Due</h3>
+          <input type="date" /><br />
+          <h3>Available from</h3>
+          <input type="date" /><br />
+          <h3>Until</h3>
+          <input type="date" /><br />
+          <button>Cancel</button>
+          <button>Save</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

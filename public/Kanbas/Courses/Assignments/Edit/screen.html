@@ -1,86 +1,104 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Kanbas Grades Screen</title>
+  </head>
+  <body>
+    <table width="100%">
+      <tbody>
+        <tr>
+          <!-- Kanbas Navigation Sidebar -->
+          <td valign="top">
+            <ul>
+              <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+              <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+              <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Commons</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
 
-<head>
-  <title>Kanbas Grades Screen</title>
-</head>
+          <!-- Course Navigation Sidebar -->
+          <td valign="top">
+            <ul>
+              <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+              <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+              <li><a href="#">Piazza</a></li>
+              <li><a href="#">Zoom Meetings</a></li>
+              <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Panopto Video</a></li>
+              <li><a href="#">Discussion</a></li>
+              <li><a href="#">Announcements</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Rubrics</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Collaborations</a></li>
+              <li><a href="#">Syllabus</a></li>
+              <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+            </ul>
+          </td>
 
-<body>
-  <table width="100%">
-    <tbody>
-      <tr>
-        <!-- Kanbas Navigation -->
-        <td valign="top">
-          <ul>
-            <li><a href="/Kanbas/Account/Navigation/index.html">Account</a></li>
-            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-            <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-            <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-          </ul>
-        </td>
-
-        <!-- Course Navigation -->
-        <td valign="top">
-          <ul>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-            <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
-            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-          </ul>
-        </td>
-
-        <!-- Grade Editor -->
-        <td valign="top">
-          <select>
-            <option>SpeedGrader</option>
-          </select>
-          <hr />
-          <h2>Assignment Name</h2>
-          <input placeholder="A1-ENV+HTML" />
-          <br />
-          <h2>Description</h2>
-          <input placeholder="This is assignment description" />
-          <h3>Points</h3>
-          <input value="100" type="number" max="100" min="50" step="5" />
-          <h3>Assignment Group</h3>
-          <select>
-            <option>ASSIGNMENTS</option>
-          </select>
-          <h3>Display Grade as</h3>
-          <select>
-            <option>Percentage</option>
-          </select>
-          <h3>Submission Types</h3>
-          <select>
-            <option>Online</option>
-          </select>
-          <h3>Online Entry Options</h3>
-          <input type="checkbox" id="textEntry" />
-          <label for="textEntry">Text Entry</label><br />
-          <input type="checkbox" /> Website URL <br />
-          <input type="checkbox" /> Media Recordings <br />
-          <input type="checkbox" /> Student Annotation <br />
-          <input type="checkbox" /> File Uploads <br />
-          <h3>Assign</h3>
-          <label>Assign To</label><br />
-          <select>
-            <option>Everyone</option>
-          </select>
-          <h3>Due</h3>
-          <input type="date" />
-          <h3>Available from</h3>
-          <input type="date" />
-          <h3>Until</h3>
-          <input type="date" /> 
-          <br />
-          <br>
-          <button>Cancel</button><button>Save</button>
-        </td>
-      </tr>
-  </table>
-  </tbody>
-  </table>
-</body>
+          <!-- Grade Editor -->
+          <td valign="top">
+            <select>
+              <option>SpeedGrader</option>
+            </select>
+            <hr />
+            <h2>Assignment Name</h2>
+            <input placeholder="A1-ENV+HTML" /><br />
+            <h2>Description</h2>
+            <input placeholder="This is assignment description" /><br />
+            <h3>Points</h3>
+            <input value="100" type="number" max="100" min="50" step="5" /><br />
+            <h3>Assignment Group</h3>
+            <select>
+              <option>ASSIGNMENTS</option>
+            </select><br />
+            <h3>Display Grade as</h3>
+            <select>
+              <option>Percentage</option>
+            </select><br />
+            <h3>Submission Types</h3>
+            <select>
+              <option>Online</option>
+            </select><br />
+            <h3>Online Entry Options</h3>
+            <input type="checkbox" id="textEntry" />
+            <label for="textEntry">Text Entry</label><br />
+            <input type="checkbox" /> Website URL <br />
+            <input type="checkbox" /> Media Recordings <br />
+            <input type="checkbox" /> Student Annotation <br />
+            <input type="checkbox" /> File Uploads <br />
+            <h3>Group Assignment</h3>
+            <input type="checkbox" id="GroupAssignment" />
+            <label for="GroupAssignment">This is a group assignment</label><br />
+            <h3>Peer Reviews</h3>
+            <input type="checkbox" id="GroupAssignment" />
+            <label for="GroupAssignment">Require Peer Review</label><br />      
+            <h3>Assign</h3>
+            <label>Assign To</label><br />
+            <select>
+              <option>Everyone</option>
+            </select><br />
+            <h3>Due</h3>
+            <input type="date" /><br />
+            <h3>Available from</h3>
+            <input type="date" /><br />
+            <h3>Until</h3>
+            <input type="date" /><br />
+            <button>Cancel</button>
+            <button>Save</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
