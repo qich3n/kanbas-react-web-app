@@ -1,153 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Kanbas Course Home Screen</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Kanbas Course Home Screen</title>
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
 
-    <table width="100%">
-      <tr>
-        <!-- Kanbas Navigation Sidebar -->
-        <td valign="top">
-          <ul>
-            <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
+  <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#kanbasNav" aria-expanded="false" aria-controls="kanbasNav">
+    <i class="fas fa-bars"></i>
+  </button>
 
-        <!-- Course Navigation Sidebar -->
-        <td valign="top">
-          <ul>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussion</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-          </ul>
-        </td>
+  <button class="btn btn-primary d-lg-none float-end" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav" aria-expanded="false" aria-controls="courseNav">
+    <i class="fas fa-chevron-down"></i>
+  </button>
 
-        <!-- Main Content Area for Home Screen -->
-        <td valign="top">
-          <button>Collapse All</button>
-          <button>View Progress</button>
-          <select>
+
+  <div class="d-flex flex-column flex-lg-row">
+    
+    <div class="collapse d-lg-block w-25" id="kanbasNav">
+      <ul class="wd-kanbas-navigation">
+        <li>
+          <a href="http://northeastern.edu"><span class="wd-custom-icon">N</span></a>
+        </li>
+        <li>
+          <a href="/Kanbas/Account/Profile/screen.html">
+            <i class="fa fa-solid fa-user wd-account-icon"></i> Account</a>
+        </li>
+  
+        <li class="wd-active">
+          <a href="/Kanbas/Dashboard/screen.html">
+            <i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-solid fa-book"></i> Courses</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa fa-solid fa-inbox"></i> Inbox</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa fa-solid fa-clock"></i> History</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa fa-solid fa-laptop"></i> Studio</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-arrow-circle-right"></i>Commons</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa fa-solid fa-question"></i> Help</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="collapse d-lg-block w-25" id="courseNav">
+      <ul class="wd-navigation">
+        <li class="wd-active">
+          <a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+        <li>
+          <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+        </li>
+        <li><a href="http://piazza.com">Piazza</a></li>
+        <li><a href="#">Zoom</a></li>
+        <li>
+          <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+        </li>
+        <li><a href="#">Quizzes</a></li>
+        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Panopto Video</a></li>
+        <li><a href="#">Discussion</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Files</a></li>
+        <li><a href="#">Rubrics</a></li>
+        <li><a href="#">Outcomes</a></li>
+        <li><a href="#">Collaborations</a></li>
+        <li><a href="#">Syllabus</a></li>
+        <li><a href="/Kanbas/Courses/Assignments/Edit/screen.html">Settings</a></li>
+      </ul>
+    </div>
+
+    <div class="col-lg-6">
+    <div style="text-align: right;">
+        <button type="button">Collapse All</button>
+        <button type="button">View Progress</button>
+        <select>
             <option>Publish All</option>
-            <option>Publish all items and modules</option>
-            <option>Unpublish</option>
-          </select>
-          <button>+ Module</button>
-          <br />
-          <ul>
-            <!-- Week 0 -->
-            <li>
-              Week 0
-              <ul>
-                <li>
-                  LEARNING OBJECTIVES
-                  <ul>
-                    <li>Introduction to the course</li>
-                    <li>Introduction to the course website</li>
-                    <li>Introduction to the course tools</li>
-                    <li>Introduction to the course assignments</li>
-                  </ul>
+            <option>Unpublish All</option>
+        </select>
+        <button type="button">+ Module</button>
+        <a href="#">
+            <button type="button">
+                <i class="fa fa-ellipsis-v ms-5/2" ></i>
+            </button>
+        </a>
+    </div>
+    <hr />
+    <ul class="list-group wd-modules">
+        <li class="list-group-item">
+            <div>
+                <i class="fa fa-ellipsis-v"></i> Week 0 - Introduction
+                <span class="float-end">
+                    <i class="fa fa-check-circle text-success"></i>
+                    <i class="fa fa-plus ms-2"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
                 </li>
-                <li>EXAMPLE READING
-                  <ul>
-                    <li>Introduction to the course</li>
-                    <li>Introduction to the course website</li>
-                    <li>Introduction to the course tools</li>
-                    <li>Introduction to the course assignments</li>
-                  </ul>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> Introduction to the course </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
                 </li>
-                <li>EXAMPLE SLIDES
-                  <ul>
-                    <li>Introduction to the course</li>
-                    <li>Introduction to the course website</li>
-                    <li>Introduction to the course tools</li>
-                    <li>Introduction to the course assignments</li>
-                  </ul>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> Introduction to the course </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
                 </li>
-              </ul>
-            </li>
-            <li>
-              Week 1
-              <ul>
-                <li>
-                  LEARNING OBJECTIVES
-                  <ul>
-                    <li>Introduction to the course</li>
-                    <li>Introduction to the course website</li>
-                    <li>Introduction to the course tools</li>
-                    <li>Introduction to the course assignments</li>
-                  </ul>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> Introduction to the course </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
                 </li>
-              </ul>
-            </li>
-            <li>
-              Week 2
-              <ul>
-                <li>
-                  LEARNING OBJECTIVES
-                  <ul>
-                    <li>Introduction to the course</li>
-                    <li>Introduction to the course website</li>
-                    <li>Introduction to the course tools</li>
-                    <li>Introduction to the course assignments</li>
-                  </ul>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> Introduction to the course </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
                 </li>
-              </ul>
-            </li>
-            <!-- Anything further we continue here-->
-          </ul>
-        </td>
-
-        <!-- Course Status Sidebar (Shown on doc) -->
-        <td valign="top">
-          <h3>Course Status</h3>
-          <button>Unpublish</button>
-          <button>Published</button>
-          <hr />
-          <ul>
-            <li><a href="#">Import Existing Content</a></li>
-            <li><a href="#">Import From Commons</a></li>
-            <li><a href="#">Choose Home Page</a></li>
-            <li><a href="#">View Course Stream</a></li>
-            <li><a href="#">New Announcements</a></li>
-            <li><a href="#">New Analytics</a></li>
-            <li><a href="#">View Course Notifications</a></li>
-          </ul>
-
-          <!-- Coming Up Sidebar Section (Showon on doc) -->
-          <hr />
-          <h3>Coming Up</h3>
-          <ul>
-            <li><a href="#">View Calendar</a></li>
-            <br>
-            <ul>
-              <li><a href="#">Lecture CS4550 Sep 7 at 11:45am</a></li>
-              <li><a href="#">Lecture CS4550 Sep 7 at 11:45am</a></li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> Introduction to the course </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
             </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> READING
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> Introduction to the course </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> Introduction to the course
+                        With HTML </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> SLIDES
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <a href="#">
+                        <i class="fa fa-link"></i>
+                        Introduction to the course
+                    </a>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <a href="#">
+                        <i class="fa fa-link"></i>
+                        Introduction to the course
+                    </a>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <a href="#">
+                        <i class="fa fa-link"></i>
+                        Introduction to the course
+                    </a>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+            </ul>
+        </li>
+        <li class="list-group-item">
+            <div>
+                <i class="fa fa-ellipsis-v"></i> Week 1 - First Week
+                <span class="float-end">
+                    <i class="fa fa-check-circle text-success"></i>
+                    <i class="fa fa-plus ms-2"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> First Week Lesson </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> First Week Lesson </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> First Week Lesson </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> READING
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> First Week Lesson </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <span style="margin-left: 15px"> </span> First Week Lesson </span>
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+            </ul>
+            <ul class="list-group">
+              <li class="list-group-item">
+                  <i class="fa fa-ellipsis-v"></i> SLIDES
+                  <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                  </span>
+              </li>
+              <li class="list-group-item">
+                  <i class="fa fa-ellipsis-v"></i>
+                  <a href="#">
+                      <i class="fa fa-link"></i>
+                      First Week Lesson
+                  </a>
+                  <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                  </span>
+              </li>
+              <li class="list-group-item">
+                  <i class="fa fa-ellipsis-v"></i>
+                  <a href="#">
+                      <i class="fa fa-link"></i>
+                      First Week Lesson
+                  </a>
+                  <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                  </span>
+              </li>
+              <li class="list-group-item">
+                  <i class="fa fa-ellipsis-v"></i>
+                  <a href="#">
+                      <i class="fa fa-link"></i>
+                      First Week Lesson
+                  </a>
+                  <span class="float-end">
+                      <i class="fa fa-check-circle text-success"></i>
+                      <i class="fa fa-ellipsis-v ms-2"></i>
+                  </span>
+              </li>
           </ul>
-        </body>
-      </html>
+        </li>
+    </ul>
+  </body>
+    </div>
+
+    <div class="col-lg-2">
+      <h3>Course Status</h3>
+      <button>Unpublish</button>
+      <button>Published</button>
+      <hr />
+      <ul>
+        <li><a href="#">Import Existing Content</a></li>
+        <li><a href="#">Import From Commons</a></li>
+        <li><a href="#">Choose Home Page</a></li>
+        <li><a href="#">View Course Stream</a></li>
+        <li><a href="#">New Announcements</a></li>
+        <li><a href="#">New Analytics</a></li>
+        <li><a href="#">View Course Notifications</a></li>
+      </ul>
+      <h3>Coming Up</h3>
+      <ul>
+        <li><a href="#">View Calendar</a></li>
+        <br>
+        <ul>
+          <li><a href="#">Lecture CS4550 Sep 7 at 11:45am</a></li>
+          <li><a href="#">Lecture CS4550 Sep 7 at 11:45am</a></li>
+        </ul>
+      </ul>
+    </div>
+
+</body>
+</html>
