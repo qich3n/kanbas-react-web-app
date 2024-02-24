@@ -112,3 +112,18 @@
   background-color: #f8f9fa; 
   cursor: pointer; 
 }
+
+.wd-course-home-body {
+  display: flex;
+  flex-direction: row; 
+}
+
+.wd-course-module-list {
+  flex-grow: 1; 
+}
+
+.wd-course-status-bar {
+  flex-grow: 0; 
+  flex-shrink: 1; 
+  flex-basis: 200px; 
+}
