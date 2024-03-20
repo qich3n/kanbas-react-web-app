@@ -90,7 +90,7 @@ function Dashboard({
                   <div className="d-flex justify-content-between">
                     <Link
                       to={`/Kanbas/Courses/${course._id}/Home`}
-                      className="btn btn-primary"
+                      className="btn btn-success"
                     >
                       Go
                     </Link>

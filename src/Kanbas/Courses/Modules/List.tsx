@@ -59,13 +59,13 @@ function ModuleList() {
           }
         />
         <button
-          className="btn btn-danger modules-buttons"
+          className="btn btn-success modules-buttons"
           onClick={() => dispatch(addModule({ ...module, course: courseId }))}
         >
           Add
         </button>
         <button
-          className="btn btn-danger modules-buttons"
+          className="btn btn-primary modules-buttons"
           onClick={() => dispatch(updateModule(module))}
         >
           Update
