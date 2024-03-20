@@ -1,0 +1,12 @@
+.dashboard-btn {
+  margin-right: 0.5;
+  margin-left: 0.5;
+}
+
+.edit-boxsection {
+  width: 75%;
+}
+
+.edit-boxrow {
+  display: flex;
+}
