@@ -1,0 +1,119 @@
+[{
+  "_id": {
+    "$oid": "661f060527161ae6f0a0cd1d"
+  },
+  "id": "125",
+  "username": "thor_odinson",
+  "password": "mjolnir123",
+  "firstName": "Thor",
+  "lastName": "Odinson",
+  "email": "thor@asgard.com",
+  "dob": "982-05-25",
+  "role": "STUDENT"
+},
+{
+  "_id": {
+    "$oid": "661f060527161ae6f0a0cd1e"
+  },
+  "id": "126",
+  "username": "hulk_smash",
+  "password": "banner123",
+  "firstName": "Bruce",
+  "lastName": "Banner",
+  "email": "bruce@avengers.com",
+  "dob": "1969-12-18",
+  "role": "STUDENT"
+},
+{
+  "_id": {
+    "$oid": "661f060527161ae6f0a0cd1f"
+  },
+  "id": "127",
+  "username": "ring_bearer",
+  "password": "shire123",
+  "firstName": "Frodo",
+  "lastName": "Baggins",
+  "email": "frodo@shire.com",
+  "dob": "1368-09-22",
+  "role": "FACULTY"
+},
+{
+  "_id": {
+    "$oid": "661f060527161ae6f0a0cd20"
+  },
+  "id": "128",
+  "username": "strider",
+  "password": "aragorn123",
+  "firstName": "Aragorn",
+  "lastName": "Elessar",
+  "email": "aragorn@gondor.com",
+  "dob": "2931-03-01",
+  "role": "FACULTY"
+},
+{
+  "_id": {
+    "$oid": "661f060527161ae6f0a0cd21"
+  },
+  "id": "129",
+  "username": "elf_archer",
+  "password": "legolas123",
+  "firstName": "Legolas",
+  "lastName": "Greenleaf",
+  "email": "legolas@mirkwood.com",
+  "dob": "2879-07-15",
+  "role": "FACULTY"
+},
+{
+  "_id": {
+    "$oid": "6620c7750212c3612c61e149"
+  },
+  "username": "aa",
+  "password": "aa",
+  "role": "USER",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6620c8126ace594ebc97d24e"
+  },
+  "username": "abc",
+  "password": "abcd",
+  "role": "USER",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6620c881a9eadac466524709"
+  },
+  "username": "abcd",
+  "password": "abide",
+  "role": "USER",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6620c98f3d0df062cf6e9cfb"
+  },
+  "username": "abcde",
+  "password": "abcdef",
+  "role": "USER",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6620cbd74905fba955d28098"
+  },
+  "username": "Henry",
+  "password": "lu",
+  "role": "USER",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6620cfb54905fba955d280a2"
+  },
+  "username": "Steven",
+  "password": "Lu",
+  "role": "USER",
+  "__v": 0
+}]
